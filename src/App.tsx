@@ -328,11 +328,11 @@ async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
       <header className="sticky top-0 z-30 border-b border-[#d8cfc1] bg-white/85 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
-            <div className="h-14 w-auto flex items-center">
+           <div className="flex justify-center py-10">
   <img
     src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_reasparente.svg"
     alt="Tunisia Gateway"
-    className="h-full w-auto"
+    className="h-20 w-auto object-contain"
   />
 </div>
             <div>
