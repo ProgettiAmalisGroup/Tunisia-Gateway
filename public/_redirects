@@ -1,0 +1,4 @@
+/welcome /index.html 200
+/dashboard /index.html 200
+/auth-success /index.html 200
+/success /index.html 200
