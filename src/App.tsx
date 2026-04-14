@@ -1022,7 +1022,7 @@ avrai la possibilità di proseguire senza interruzioni la tua vita all’interno
 
        <div className="flex justify-center py-10">
   <img
-    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_reasparente.svg"
+    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_png_trasparente.png"
     alt="Tunisia Gateway"
     className="h-24 w-auto"
   />
