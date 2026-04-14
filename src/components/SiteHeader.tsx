@@ -5,9 +5,13 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-30 border-b border-[#d8cfc1] bg-white/85 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#103a52] text-white shadow-sm">
-            <Compass className="h-5 w-5" />
-          </div>
+          <div className="h-12 w-auto flex items-center">
+  <img
+    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_reasparente.svg"
+    alt="Tunisia Gateway"
+    className="h-full w-auto"
+  />
+</div>
           <div>
             <p className="text-base font-semibold text-slate-900">Tunisia Gateway</p>
             <p className="text-xs text-[#8a7b68]">Powered by Coomunity</p>

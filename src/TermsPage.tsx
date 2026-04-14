@@ -89,6 +89,14 @@ export default function TermsPage() {
 </div>
       </div>
 
+        <div className="flex justify-center py-10">
+  <img
+    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_reasparente.svg"
+    alt="Tunisia Gateway"
+    className="h-24 w-auto"
+  />
+</div>
+
       <SiteFooter />
     </>
   );

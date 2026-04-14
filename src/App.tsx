@@ -328,9 +328,13 @@ async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
       <header className="sticky top-0 z-30 border-b border-[#d8cfc1] bg-white/85 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#103a52] text-white shadow-sm">
-              <Compass className="h-5 w-5" />
-            </div>
+            <div className="h-14 w-auto flex items-center">
+  <img
+    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_reasparente.svg"
+    alt="Tunisia Gateway"
+    className="h-full w-auto"
+  />
+</div>
             <div>
               <p className="text-base font-semibold text-slate-900">Tunisia Gateway</p>
               <p className="text-xs text-[#8a7b68]">Powered by Coomunity</p>
@@ -1016,6 +1020,14 @@ avrai la possibilità di proseguire senza interruzioni la tua vita all’interno
         </section>
       </main>
 
+       <div className="flex justify-center py-10">
+  <img
+    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_reasparente.svg"
+    alt="Tunisia Gateway"
+    className="h-24 w-auto"
+  />
+</div>
+
       <footer className="border-t border-slate-200 bg-slate-950 text-slate-300">
   <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
 
@@ -1023,12 +1035,15 @@ avrai la possibilità di proseguire senza interruzioni la tua vita all’interno
     <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
 
       {/* BRAND */}
-      <div>
-        <p className="text-lg font-semibold text-white">Tunisia Gateway</p>
-        <p className="mt-2 text-sm text-slate-400">
-          Vivere in un resort, con servizi, supporto e una nuova qualità della vita.
-        </p>
-      </div>
+      <div className="flex items-center gap-4">
+
+  <div>
+    <p className="text-lg font-semibold text-white">Tunisia Gateway</p>
+    <p className="mt-1 text-sm text-slate-400">
+      Vivere in un resort, con servizi, supporto e una nuova qualità della vita.
+    </p>
+  </div>
+</div>
 
       {/* CTA */}
       <div className="flex flex-wrap gap-3 text-sm">
