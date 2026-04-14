@@ -400,9 +400,9 @@ avrai la possibilità di proseguire senza interruzioni all’interno del progett
 
               <div className="mt-8 grid gap-6 sm:grid-cols-3">
   {[
-    { label: "Primo passo", value: "Sessione iniziale da 50€" },
+    { label: "Primo passo", value: "Sessione iniziale di Orientamento" },
     { label: "Tempo per decidere", value: "30 giorni, 3, 6 o 12 mesi" },
-    { label: "La tua scelta", value: "Restare o tornare" },
+    { label: "La tua unica scelta", value: "Restare in Tunisia o tornare nel tuo paese" },
   ].map((item) => (
     <div
       key={item.label}
