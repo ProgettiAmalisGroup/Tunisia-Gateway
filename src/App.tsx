@@ -19,6 +19,9 @@ import AuthPage from "./AuthPage";
 import { supabase } from "./lib/supabase";
 import AuthSuccess from "./AuthSuccess";
 import WelcomePage from "./WelcomePage";
+import ProjectPage from "./ProjectPage";
+import TermsPage from "./TermsPage";
+import PrivacyPage from "./PrivacyPage";
 
 /**
  * Tunisia Gateway MVP
@@ -335,12 +338,19 @@ async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
           </div>
 
           <div className="flex items-center gap-3">
-            <a
-              href="#sessione"
-              className="hidden rounded-xl border border-[#d4c6b5] px-4 py-2 text-sm font-medium text-[#103a52] transition hover:border-[#bfae98] hover:bg-[#f4ede3] sm:inline-flex"
-            >
-              Prenota la Call
-            </a>
+  <a
+    href="/#/il-progetto"
+    className="hidden rounded-xl border border-[#d4c6b5] px-4 py-2 text-sm font-medium text-[#103a52] transition hover:border-[#bfae98] hover:bg-[#f4ede3] sm:inline-flex"
+  >
+    Il progetto
+  </a>
+
+  <a
+    href="#sessione"
+    className="hidden rounded-xl border border-[#d4c6b5] px-4 py-2 text-sm font-medium text-[#103a52] transition hover:border-[#bfae98] hover:bg-[#f4ede3] sm:inline-flex"
+  >
+    Prenota la Call
+  </a>
             {false && (
   <button
     type="button"
@@ -380,7 +390,7 @@ in base al tempo che senti necessario per decidere davvero.
               </p>
               <p className="mt-4 text-sm leading-7 text-slate-600">
 Se durante il percorso capisci che la Tunisia è davvero la scelta giusta per te,
-avrai la possibilità di proseguire senza interruzioni all’interno del progetto.
+avrai la possibilità di proseguire senza interruzioni la tua vita all’interno del Resort o farti aiutare nella ricerca della casa dei tuoi sogni.
 </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -391,7 +401,7 @@ avrai la possibilità di proseguire senza interruzioni all’interno del progett
                   Prenota la sessione di orientamento
                 </a>
                 <a
-                  href="#prezzi"
+                  href="#formule"
                   className="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3.5 text-base font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-100"
                 >
                   Vedi formule e tariffe
@@ -621,12 +631,34 @@ avrai la possibilità di proseguire senza interruzioni all’interno del progett
           </div>
         </section>
 
-        <section id="prezzi" className="bg-white py-16">
+          <div className="bg-gray-100 py-16 px-6">
+  <div className="max-w-3xl mx-auto text-center space-y-6">
+    
+    <h2 className="text-3xl font-bold">
+      Non è solo un soggiorno. È un cambio di vita.
+    </h2>
+
+    <p className="text-gray-700">
+      Tunisia Gateway è un progetto pensato per aiutarti a ridurre i costi,
+      semplificare il trasferimento e accedere a nuove opportunità.
+    </p>
+
+    <a
+      href="/#/il-progetto"
+      className="inline-block bg-black text-white px-6 py-3 rounded-xl font-semibold"
+    >
+      Scopri il progetto
+    </a>
+
+  </div>
+</div>
+ 
+        <section id="formule" className="bg-white py-16">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionTitle
               eyebrow="Formule soggiorno"
-              title="Tariffe pensate per premiare la permanenza lunga."
-              subtitle="Le formule più vantaggiose sono riservate ai soggiorni di lunga durata. I prezzi possono variare in base al periodo e alla disponibilità."
+              title="Scegli la soluzione più adatta a te e blocca subito il tuo posto."
+              subtitle="I prezzi possono variare in base al periodo e alla disponibilità, le richieste stanno aumentando rapidamente."
             />
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -985,26 +1017,57 @@ avrai la possibilità di proseguire senza interruzioni all’interno del progett
       </main>
 
       <footer className="border-t border-slate-200 bg-slate-950 text-slate-300">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-10 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-          <div>
-            <p className="text-lg font-semibold text-white">Tunisia Gateway</p>
-            <p className="mt-2 text-sm text-slate-400">Verticale hospitality e long-stay powered by Coomunity.</p>
-          </div>
+  <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
 
-          <div className="flex flex-wrap gap-3 text-sm">
-            <a href="#sessione" className="rounded-xl border border-slate-700 px-4 py-2 transition hover:border-slate-500 hover:text-white">
-              Prenota la sessione
-            </a>
-            <button
-              type="button"
-              onClick={onOpenAdmin}
-              className="rounded-xl border border-slate-700 px-4 py-2 transition hover:border-slate-500 hover:text-white"
-            >
-              Area interna
-            </button>
-          </div>
-        </div>
-      </footer>
+    {/* TOP */}
+    <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+
+      {/* BRAND */}
+      <div>
+        <p className="text-lg font-semibold text-white">Tunisia Gateway</p>
+        <p className="mt-2 text-sm text-slate-400">
+          Vivere in un resort, con servizi, supporto e una nuova qualità della vita.
+        </p>
+      </div>
+
+      {/* CTA */}
+      <div className="flex flex-wrap gap-3 text-sm">
+        <a
+          href="#sessione"
+          className="rounded-xl border border-slate-700 px-4 py-2 transition hover:border-slate-500 hover:text-white"
+        >
+          Prenota la call
+        </a>
+
+       
+      </div>
+    </div>
+
+    {/* DIVIDER */}
+    <div className="my-8 border-t border-slate-800"></div>
+
+    {/* BOTTOM */}
+    <div className="flex flex-col gap-4 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
+
+      {/* LEGAL */}
+      <div className="flex flex-wrap gap-4">
+        <a href="/#/termini" className="transition hover:text-white">
+          Termini e condizioni
+        </a>
+        <a href="/#/privacy" className="transition hover:text-white">
+          Privacy Policy
+        </a>
+      </div>
+
+      {/* COMPANY */}
+      <div className="text-xs text-slate-500">
+        © {new Date().getFullYear()} Amalis Group Srl – P.IVA 06169160873
+      </div>
+
+    </div>
+
+  </div>
+</footer>
     </div>
   );
 }
@@ -1098,6 +1161,18 @@ if (path.startsWith("/dashboard")) {
 
 if (path.startsWith("/admin")) {
   return <AdminDashboard />;
+}
+
+if (path.startsWith("/il-progetto")) {
+  return <ProjectPage />;
+}
+
+if (path.startsWith("/termini")) {
+  return <TermsPage />;
+}
+
+if (path.startsWith("/privacy")) {
+  return <PrivacyPage />;
 }
 
 if (view === "auth") {
