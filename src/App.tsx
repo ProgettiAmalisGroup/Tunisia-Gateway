@@ -328,11 +328,11 @@ async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
       <header className="sticky top-0 z-30 border-b border-[#d8cfc1] bg-white/85 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
-           <div className="flex justify-center py-10">
+            <div className="h-14 w-auto flex items-center">
   <img
-    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_reasparente.svg"
+    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_1500.png"
     alt="Tunisia Gateway"
-    className="h-20 w-auto object-contain"
+    className="h-full w-auto"
   />
 </div>
             <div>
@@ -1022,7 +1022,7 @@ avrai la possibilità di proseguire senza interruzioni la tua vita all’interno
 
        <div className="flex justify-center py-10">
   <img
-    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_png_trasparente.png"
+    src="https://gwrkwdkshbjgazfzyziq.supabase.co/storage/v1/object/public/landing-images/logo_1500.png"
     alt="Tunisia Gateway"
     className="h-24 w-auto"
   />
